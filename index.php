@@ -65,8 +65,7 @@ include("conexion.php");
 								}
 							?>
 						</ul> <!-- .Termina menu -->
-					</div> <!-- . Termina main-navigation -->
-					</div>
+					</div> <!-- . Termina main-navigation --></div>
 			</div> <!-- .site-header -->
 
 
@@ -220,16 +219,7 @@ include("conexion.php");
 			        		+'and enjoy as many delicious, crisp vegetables as you can eat.';
 		    			var defaultColima= '<?=$climaColima?>';
 			        	var defaultVilla = '<?=$climaVilla?>';
-			        	var defaultCoquimatlan = '<?=$climaCoquimatlan?>';
-		    		
-		    			image.mapster(
-				    	{
-				        fillOpacity: 0.4,
-				        fillColor: "d42e16",
-				        stroke: true,
-				        strokeColor: "3320FF",
-				        strokeOpacity: 0.8,
-				        strokeWidth: 4,
+
 				        singleSelect: true,
 				        mapKey: 'name',
 				        listKey: 'name',
