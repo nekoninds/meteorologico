@@ -25,7 +25,7 @@
 				</div>
 			</div> <!-- .site-header -->
 
-			
+
 
 
 				</div>
@@ -42,7 +42,7 @@
 					$time = time();
 
 				?>
-				
+
 				<div class="fullwidth-block">
 					<div class="container">
 						<div class="row">
@@ -50,13 +50,13 @@
 								<div class="post single">
 									<h2 class="entry-title">Campus Villa de Álvarez</h2>
 									<div class="featured-image"><img src="images/villa.jpg" alt=""></div>
-									
+
 
 									<div class="entry-content">
 										<div class="tabla"><div class="forecast-table">
 										<div class="container" style="padding-left: 0px; width: 962px;">
 										<div class="forecast2-container" style="margin-top: 30px">
-											
+
 											<div class="forecast">
 												<div class="forecast-header">
 													<div class="day"><?php echo date("Y-m-d ", $time-518400);?></div>
@@ -69,17 +69,17 @@
 															if (mysqli_num_rows($ResProm6) > 0)
 															{
 
-																while($row = mysqli_fetch_assoc($ResProm6)) 
+																while($row = mysqli_fetch_assoc($ResProm6))
 																{
 																	echo "Promedio: " .round($row['AVG(dato)'],2);
-																	
+
 																}
 															}
 
 
 
 														?>
-														<sup>o</sup>C		
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -88,14 +88,14 @@
 															$ResMayor6 = mysqli_query($con, $Mayor6);
 															if (mysqli_num_rows($ResMayor6) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMayor6)) 
+																while($row = mysqli_fetch_assoc($ResMayor6))
 																{
 																	echo "Maxima: ".$row['MAX(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -104,14 +104,14 @@
 															$ResMenor6 = mysqli_query($con, $Menor6);
 															if (mysqli_num_rows($ResMenor6) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMenor6)) 
+																while($row = mysqli_fetch_assoc($ResMenor6))
 																{
 																	echo "Minima: ".$row['MIN(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 												</div>
 											</div>
@@ -127,17 +127,17 @@
 															if (mysqli_num_rows($ResProm5) > 0)
 															{
 
-																while($row = mysqli_fetch_assoc($ResProm5)) 
+																while($row = mysqli_fetch_assoc($ResProm5))
 																{
 																	echo "Promedio: " .round($row['AVG(dato)'],2);
-																	
+
 																}
 															}
 
 
 
 														?>
-														<sup>o</sup>C		
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -146,14 +146,14 @@
 															$ResMayor5 = mysqli_query($con, $Mayor5);
 															if (mysqli_num_rows($ResMayor5) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMayor5)) 
+																while($row = mysqli_fetch_assoc($ResMayor5))
 																{
 																	echo "Maxima: ".$row['MAX(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -162,14 +162,14 @@
 															$ResMenor5 = mysqli_query($con, $Menor5);
 															if (mysqli_num_rows($ResMenor5) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMenor5)) 
+																while($row = mysqli_fetch_assoc($ResMenor5))
 																{
 																	echo "Minima: ".$row['MIN(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 												</div>
 											</div>
@@ -185,17 +185,17 @@
 															if (mysqli_num_rows($ResProm4) > 0)
 															{
 
-																while($row = mysqli_fetch_assoc($ResProm4)) 
+																while($row = mysqli_fetch_assoc($ResProm4))
 																{
 																	echo "Promedio: " .round($row['AVG(dato)'],2);
-																	
+
 																}
 															}
 
 
 
 														?>
-														<sup>o</sup>C		
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -204,14 +204,14 @@
 															$ResMayor4 = mysqli_query($con, $Mayor4);
 															if (mysqli_num_rows($ResMayor4) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMayor4)) 
+																while($row = mysqli_fetch_assoc($ResMayor4))
 																{
 																	echo "Maxima: ".$row['MAX(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -220,14 +220,14 @@
 															$ResMenor4 = mysqli_query($con, $Menor4);
 															if (mysqli_num_rows($ResMenor4) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMenor4)) 
+																while($row = mysqli_fetch_assoc($ResMenor4))
 																{
 																	echo "Minima: ".$row['MIN(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 												</div>
 											</div>
@@ -243,17 +243,17 @@
 															if (mysqli_num_rows($ResProm3) > 0)
 															{
 
-																while($row = mysqli_fetch_assoc($ResProm3)) 
+																while($row = mysqli_fetch_assoc($ResProm3))
 																{
 																	echo "Promedio: " .round($row['AVG(dato)'],2);
-																	
+
 																}
 															}
 
 
 
 														?>
-														<sup>o</sup>C		
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -262,14 +262,14 @@
 															$ResMayor3 = mysqli_query($con, $Mayor3);
 															if (mysqli_num_rows($ResMayor3) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMayor3)) 
+																while($row = mysqli_fetch_assoc($ResMayor3))
 																{
 																	echo "Maxima: ".$row['MAX(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -278,14 +278,14 @@
 															$ResMenor3 = mysqli_query($con, $Menor3);
 															if (mysqli_num_rows($ResMenor3) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMenor3)) 
+																while($row = mysqli_fetch_assoc($ResMenor3))
 																{
 																	echo "Minima: ".$row['MIN(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 												</div>
 											</div>
@@ -301,17 +301,17 @@
 															if (mysqli_num_rows($ResProm2) > 0)
 															{
 
-																while($row = mysqli_fetch_assoc($ResProm2)) 
+																while($row = mysqli_fetch_assoc($ResProm2))
 																{
 																	echo "Promedio: " .round($row['AVG(dato)'],1);
-																	
+
 																}
 															}
 
 
 
 														?>
-														<sup>o</sup>C		
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -320,14 +320,14 @@
 															$ResMayor2 = mysqli_query($con, $Mayor2);
 															if (mysqli_num_rows($ResMayor2) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMayor2)) 
+																while($row = mysqli_fetch_assoc($ResMayor2))
 																{
 																	echo "Maxima: ".$row['MAX(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -336,14 +336,14 @@
 															$ResMenor2 = mysqli_query($con, $Menor2);
 															if (mysqli_num_rows($ResMenor2) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMenor2)) 
+																while($row = mysqli_fetch_assoc($ResMenor2))
 																{
 																	echo "Minima: ".$row['MIN(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 												</div>
 											</div>
@@ -352,7 +352,7 @@
 													<div class="day"><?php echo date("Y-m-d ", $time-86400);?></div>
 												</div> <!-- .forecast-header -->
 												<div class="forecast-content">
-													
+
 													<div>
 														<?php
 															$Prom = "SELECT AVG(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa' AND fecha = '".date("Y-m-d ", $time - 86400)."'";
@@ -360,17 +360,17 @@
 															if (mysqli_num_rows($ResProm) > 0)
 															{
 
-																while($row = mysqli_fetch_assoc($ResProm)) 
+																while($row = mysqli_fetch_assoc($ResProm))
 																{
 																	echo "Promedio: " .round($row['AVG(dato)'],2);
-																	
+
 																}
 															}
 
 
 
 														?>
-														<sup>o</sup>C		
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -379,14 +379,14 @@
 															$ResMayor = mysqli_query($con, $Mayor);
 															if (mysqli_num_rows($ResMayor) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMayor)) 
+																while($row = mysqli_fetch_assoc($ResMayor))
 																{
 																	echo "Maxima: ".$row['MAX(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 													<div>
 														<?php
@@ -395,14 +395,14 @@
 															$ResMenor = mysqli_query($con, $Menor);
 															if (mysqli_num_rows($ResMenor) > 0)
 															{
-																while($row = mysqli_fetch_assoc($ResMenor)) 
+																while($row = mysqli_fetch_assoc($ResMenor))
 																{
 																	echo "Minima: ".$row['MIN(dato)'];
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
 														?>
-														<sup>o</sup>C	
+														<sup>o</sup>C
 													</div>
 												</div>
 											</div>
@@ -420,18 +420,19 @@
 																$result1 = mysqli_query($con, $ultTemp);
 																if (mysqli_num_rows($result1) > 0)
 																{
-																	while($row = mysqli_fetch_assoc($result1)) 
+																	while($row = mysqli_fetch_assoc($result1))
 																	{
 																		echo $row['dato'];
 																		//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																	}
 																}
 															?><sup>o</sup>C
-															
-															<img src="images/icons/temp.png" alt="" width=50 style="padding-top: 0px; margin-top: -63px; margin-left: 0px;">
+
+
 														</div>
-															
-															
+																													<img src="images/icons/temp.png" alt="" width=50 style="padding-top: 0px; margin-top: -63px; margin-left: 0px;">
+
+
 													</div>
 													<div class="degree" style="margin-top:20px;">
 														<?php
@@ -440,12 +441,12 @@
 															$result2 = mysqli_query($con, $ultHum);
 															if (mysqli_num_rows($result2) > 0)
 															{
-																while($row = mysqli_fetch_assoc($result2)) 
+																while($row = mysqli_fetch_assoc($result2))
 																{
 																	echo $row['dato']."%";
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
-															}	
+															}
 														?><img src="images/icons/hum.png" alt="" width=50 style="padding-top: 0px; margin-top: -20px; margin-left: 10px;">
 													</div>
 													<div class="degree" style="margin-top:20px;">
@@ -455,7 +456,7 @@
 														$result3 = mysqli_query($con, $ultLum);
 														if (mysqli_num_rows($result3) > 0)
 														{
-															while($row = mysqli_fetch_assoc($result3)) 
+															while($row = mysqli_fetch_assoc($result3))
 															{
 																echo $row['dato']."%";
 																//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
@@ -464,33 +465,33 @@
 														?>
 														<img src="images/icons/lum.png" alt="" width=50 style="padding-top: 0px; margin-top: -20px; margin-left: 5px;">
 													</div>
-													
+
 												</div>
 											</div>
 										</div>
 									</div>
 								</div></div>
 										<div class="antecedentes">
-											<p><h1>Medidas de Prevención</h1></p>	
+											<p><h1>Medidas de Prevención</h1></p>
 											<p>Es importante tomar algunas de las siguientes precauciones en caso de un desastre natural, dar clic en los enlaces para mas información.</p>
 											<ul class="arrow-list">
 												<li><a href="http://www.gob.mx/segob/acciones-y-programas/sismos-en-mexico-preparate-antes-actua-durante-revisa-despues" target="_blank">En caso de SISMO</a></li>
 												<li><a href="http://www.camafu.org.mx/index.php/noticias/articles/recomendaciones-para-prevenir-y-atender-incendios-forestales-catastroficos-que-pueden-danar-a-la-poblacion-los-bienes-y-los-recu.html" target="_blank">En caso de INCENDIO</a></li>
-												
+
 												<li><a href="http://bienestar.salud180.com/salud-dia-dia/precauciones-en-caso-de-inundaciones" target="_blank">En caso de INUNDACION</a></li>
 												<li><a href="http://skyalert.mx/medidas-de-prevencion-que-hacer-en-caso-de-tormenta-electrica/" target="_blank">En caso de TORMENTA ELECTRICA</a></li>
 												<li><a href="http://www.proteccioncivil.col.gob.mx/boletin.php?c=NzA0MQ" target="_blank">En caso de ERUPCIÓN VOLCÁNICA</a></li>
 											</ul>
 										</div>
 										<div>
-											
+
 										</div>
 									</div>
 
 								</div>
 
 							</div>
-							<div class="sidebar col-md-3 col-md-offset-1"> 	 
+							<div class="sidebar col-md-3 col-md-offset-1">
 								<?php
 								if (isset($_SESSION['nickname']))
 								{
@@ -502,9 +503,9 @@
 											<li><a href='tablasVilla.php'>Tablas</a></li>
 										</ul>
 									</div>";
-								}	
-								
-								?>  	
+								}
+
+								?>
 								<!-- mapa de google -->
 							<div class="mapa2" style="width: 266px; margin-top: 60px">
 								<div class="contact-details">
@@ -513,33 +514,33 @@
 									<address>
 										<img src="images/icon-marker.png" alt="">
 										<p>Estación Meteorológica <br>
-										
+
 										Avenida Universidad 333, Las Víboras, 28040 Colima, Col.   </p>
-									</address>	
+									</address>
 									</div>
 								</div>
 							</div>
 							</div>
-							
+
 						</div>
 					</div>
 				</div>
 			</main> <!-- .main-content -->
 	<footer class="site-footer">
 			<div class="container">
-				
+
 						<div class="social-links" style="margin: 0px auto;">
 							<a href="https://www.facebook.com/" ><i class="fa fa-facebook"></i></a>
 							<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
 							<a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
 							<a href="https://es.pinterest.com/"><i class="fa fa-pinterest"></i></a>
-						
+
 
 				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Digital Systems. All rights reserved</p>
 			</div>
 		</footer> <!-- .site-footer -->
 		</div>
-		
+
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>

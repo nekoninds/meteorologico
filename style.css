@@ -15,9 +15,9 @@
     -webkit-border-radius: 30px 30px 30px 30px;
     border: 0px solid #000000;
     background: #323544;
-} 
+}
 .fullwidth2-block {
- 
+
    align-items: center;
 
 }
@@ -56,8 +56,8 @@
 .login{
   background: #323544;
  border-radius: 40px;
-  padding: 20px 30px; 
-  align-content: center; 
+  padding: 20px 30px;
+  align-content: center;
 
 }
 .Contenedorlogin{
@@ -115,7 +115,7 @@ margin: 0px auto;
 }
 
 .container2{
-  
+
     width: 360px;
     padding-left: 0px;
     padding-right: 0px;
@@ -197,7 +197,8 @@ margin: 0px auto;
         font-size: 24px;
         font-size: 1.7142857143em;
         color: white;
-        font-weight: 500; }
+        font-weight: 500;
+        margin-top: 0px;. }
       .forecast2-container .forecast .forecast-content small {
         font-size: 16px;
         font-size: 1.1428571429em; }
@@ -343,7 +344,7 @@ table {
    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;M
-    
+
 
 }
 
@@ -360,10 +361,10 @@ tr:nth-child(even) {
 /*!
  * Project_Name: Estacion Metereologica
  * Author: 5 B
- * Email: 
- * Url: 
+ * Email:
+ * Url:
 
-/*=========================================== 
+/*===========================================
  * Importing CSS Libraries
  *===========================================*/
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {
@@ -594,7 +595,7 @@ form textarea {
   color: white;
 }
 .map {
-  height: 220px; 
+  height: 220px;
 }
 .container {
   margin-right: auto;
@@ -656,22 +657,22 @@ form textarea {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px; 
+  padding-right: 15px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-  float: left; 
+  float: left;
 }
 .col-xs-1 {
-  width: 8.3333333333%; 
+  width: 8.3333333333%;
 }
 .col-xs-2 {
-  width: 16.6666666667%; 
+  width: 16.6666666667%;
 }
 .col-xs-3 {
-  width: 25%; 
+  width: 25%;
 }
 .col-xs-4 {
-  width: 33.3333333333%; 
+  width: 33.3333333333%;
 }
 .col-xs-5 {
   width: 41.6666666667%;
@@ -680,13 +681,13 @@ form textarea {
   width: 50%;
 }
 .col-xs-7 {
-  width: 58.3333333333%; 
+  width: 58.3333333333%;
 }
 .col-xs-8 {
-  width: 66.6666666667%; 
+  width: 66.6666666667%;
 }
 .col-xs-9 {
-  width: 75%; 
+  width: 75%;
 }
 .col-xs-10 {
   width: 83.3333333333%;
@@ -942,7 +943,7 @@ form textarea {
     margin-left: 16.6666666667%;
   }
   .col-sm-offset-3 {
-    margin-left: 25%; 
+    margin-left: 25%;
   }
   .col-sm-offset-4 {
     margin-left: 33.3333333333%;
@@ -1135,10 +1136,10 @@ form textarea {
     float: left;
   }
   .col-lg-1 {
-    width: 8.3333333333%; 
+    width: 8.3333333333%;
   }
   .col-lg-2 {
-    width: 16.6666666667%; 
+    width: 16.6666666667%;
   }
   .col-lg-3 {
     width: 25%;
@@ -1201,7 +1202,7 @@ form textarea {
     right: 75%;
   }
   .col-lg-pull-10 {
-    right: 83.3333333333%; 
+    right: 83.3333333333%;
   }
   .col-lg-pull-11 {
     right: 91.6666666667%;
@@ -1210,7 +1211,7 @@ form textarea {
     right: 100%;
   }
   .col-lg-push-0 {
-    left: auto; 
+    left: auto;
   }
   .col-lg-push-1 {
     left: 8.3333333333%;
@@ -1252,7 +1253,7 @@ form textarea {
     margin-left: 0%;
   }
   .col-lg-offset-1 {
-    margin-left: 8.3333333333%; 
+    margin-left: 8.3333333333%;
   }
   .col-lg-offset-2 {
     margin-left: 16.6666666667%;
@@ -1845,7 +1846,7 @@ form textarea {
 }
 .arrow-list li {
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .arrow-list li:last-child {
   border-bottom: none;
@@ -2107,7 +2108,7 @@ form textarea {
 .site-footer {
   background: #262936;
   padding: 50px 0;
-  
+
 }
 .site-footer .subscribe-form {
   position: relative;
