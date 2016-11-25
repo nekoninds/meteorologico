@@ -1,5 +1,9 @@
 <?php
-	include("header.php")
+	include("header.php");
+	include('temperaturaColimaGrafica.php');
+	include('HumedadColimaGrafica.php');
+	include('LuminocidadColimaGrafica.php');
+
 ?>
 
 					<!-- Default snippet for navigation -->

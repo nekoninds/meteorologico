@@ -8,7 +8,7 @@ google.load("visualization", "1", {packages:["corechart"]});
         
         <?php 
         	echo "var obj = [";
-            $TemperaturaColima = "SELECT * FROM datos WHERE idSensor='3' ORDER BY idDato";
+            $TemperaturaColima = "SELECT * FROM datos WHERE idSensor='3' AND ubicacion = 'colima' ORDER BY idDato";
             $exec = mysqli_query($con,$TemperaturaColima);
             while($row =mysqli_fetch_array($exec))
             {

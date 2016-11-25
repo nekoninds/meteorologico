@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <?php
 	include("header.php")
 ?>
@@ -30,9 +31,9 @@
 						<span>Login</span>
 					</div>
 			</div>
-			<div class="Contenedorlogin">
+			<div class="Contenedorlogin" >
 				
-				<div class="login">
+				<div class="login" style="margin-bottom:30px;">
 					<div class="fullwidth2-block">
 						<div class="container2" id="contenedor">
 
@@ -41,10 +42,10 @@
 								<p class="colophon">Solo administradores pueden acceder</p>
 								<form class="contact-form" action="verificarUsuario.php" method="post">
 									<div class="row">
-										<div class="col2-md-6"><input type="text" name="nickname" placeholder="Username..."></div>
+										<div class="col2-md-6"><input type="text" name="nickname" placeholder="Username"></div>
 									</div>
 									<div class="row">
-										<div class="col3-md-6"><input type="password" name="password" placeholder="Password.."></div>
+										<div class="col3-md-6"><input type="password" name="password" placeholder="Password"></div>
 									</div>
 									<div class="text1-right">
 										<input id="login" type="submit" placeholder="Send message">
@@ -67,14 +68,14 @@
 		<footer class="site-footer">
 			<div class="container">
 				
-						<div class="social-links">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-							<a href="#"><i class="fa fa-pinterest"></i></a>
-						</div><br><br><br><br><br><br><br>
+						<div class="social-links" style="margin: 0px auto;">
+							<a href="https://www.facebook.com/" ><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+							<a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+							<a href="https://es.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+						
 
-				<p class="colophon2" style="text-align: center;" ">Copyright 2016 Universidad de Colima. Designed by Tlaloc Group. All rights reserved</p>
+				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Tlaloc Group. All rights reserved</p>
 			</div>
 		</footer> <!-- .site-footer -->
 		

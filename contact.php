@@ -28,7 +28,7 @@
 			<main class="main-content">
 				<div class="container">
 					<div class="breadcrumb">
-						<a href="index.html">Home</a>
+						<a href="index.php">Home</a>
 						<span>Contact</span>
 					</div>
 				</div>
@@ -41,18 +41,18 @@
 								<div class="contact-info">
 									<address>
 										<img src="images/icon-marker.png" alt="">
-										<p>Company Name INC. <br>
-										2803 Avenue Street, Los Angeles</p>
+										<p>Digital Systems. <br>
+										Avenida Universidad 333, Las Víboras, 28040 Colima, Col. </p>
 									</address>
 									
 									<a href="#"><img src="images/icon-phone.png" alt="">+1 800 314 235</a>
-									<a href="#"><img src="images/icon-envelope.png" alt="">contact@companyname.com</a>
+									<a href="#"><img src="images/icon-envelope.png" alt="">tlaloc@gmail.com</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-6 col-md-offset-1">
 							<h2 class="section-title">Contact us</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+							<p>Digital Systems</p>
 							<form action="#" class="contact-form">
 								<div class="row">
 									<div class="col-md-6"><input type="text" placeholder="Your name..."></div>
@@ -75,22 +75,17 @@
 			</main> <!-- .main-content -->
 
 			<footer class="site-footer">
-				<div class="container">
-					<div class="row">
+			<div class="container">
+				
+						<div class="social-links" style="margin: 0px auto;">
+							<a href="https://www.facebook.com/" ><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+							<a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+							<a href="https://es.pinterest.com/"><i class="fa fa-pinterest"></i></a>
 						
-						<div class="col-md-3 col-md-offset-1">
-							<div class="social-links">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-google-plus"></i></a>
-								<a href="#"><i class="fa fa-pinterest"></i></a>
-							</div>
-						</div>
-					</div>
 
-					<p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
-				</div>
-			</footer> <!-- .site-footer -->
+				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Digital Systems. All rights reserved</p>
+			</div>
 		</div>
 		
 		<script src="js/jquery-1.11.1.min.js"></script>

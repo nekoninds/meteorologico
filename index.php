@@ -10,8 +10,8 @@ include("conexion.php");
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
-
-		<title>Estacion Metereologica¿</title>
+		
+		<title>Estacion Metereologica</title>
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
@@ -28,10 +28,10 @@ include("conexion.php");
 			if (isset($_SESSION['nickname']))
 			{
 				$nickname = $_SESSION['nickname'];
-
+				
 				echo "<p style='text-align: right';>".$nickname . "  ";
 				echo "<a href='desconexion.php'>Logout</a></p>";
-
+		
 			}
 			//$nickname=$_SESSION["nickname"];
 
@@ -45,7 +45,7 @@ include("conexion.php");
 							<img src="images/logo.png" alt="" class="logo"><!--Logo de la pagina-->
 							<div class="logo-type"><!--Contenedor del titulo-->
 								<h1 class="site-title">Tlaloc</h1><!--Titulo de la pagina-->
-								<small class="site-description">Estación Meteorológica</small><!--Letras pequeñas-->
+								<small class="site-description">Proyecto Integrador</small><!--Letras pequeñas-->
 							</div>
 						</a>
 
@@ -66,21 +66,24 @@ include("conexion.php");
 							?>
 						</ul> <!-- .Termina menu -->
 					</div> <!-- . Termina main-navigation -->
-					</div>
+
+					<div class="mobile-navigation"></div><!---->
+
+				</div>
 			</div> <!-- .site-header -->
 
 
 				<!--Mapa colima Coordenadas-->
 			<div class="ContenedorMapa">
-
+				
 					<?php
 						if (isset($_SESSION['nickname']))
 						{
 							echo "<h1>Bienvenido " . $nickname . "</h1>";
 						}
-
+						
 					?>
-
+					
 					<?php
 
 							//conseguir el ultimo registro:
@@ -89,7 +92,7 @@ include("conexion.php");
 							$result1 = mysqli_query($con, $ultTemp);
 							if (mysqli_num_rows($result1) > 0)
 							{
-								while($row = mysqli_fetch_assoc($result1))
+								while($row = mysqli_fetch_assoc($result1)) 
 								{
 									$tempColima = "La temperatura: ".$row['dato']."&#176;";
 									//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
@@ -100,20 +103,20 @@ include("conexion.php");
 							$result2 = mysqli_query($con, $ultHum);
 							if (mysqli_num_rows($result2) > 0)
 							{
-								while($row = mysqli_fetch_assoc($result2))
+								while($row = mysqli_fetch_assoc($result2)) 
 								{
 									$HumColima = "La Humedad: ".$row['dato']."%";
 									//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 								}
-							}
-
+							}				
+							
 
 							$ultLum="SELECT * FROM datos WHERE idSensor = '3' AND ubicacion = 'colima' ORDER BY idDato desc limit 1";
 							//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
 							$result3 = mysqli_query($con, $ultLum);
 							if (mysqli_num_rows($result3) > 0)
 							{
-								while($row = mysqli_fetch_assoc($result3))
+								while($row = mysqli_fetch_assoc($result3)) 
 								{
 									$LumColima = "La Luminocidad: ".$row['dato']."%";
 									//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
@@ -129,7 +132,7 @@ include("conexion.php");
 							$result4 = mysqli_query($con, $ultTemp1);
 							if (mysqli_num_rows($result4) > 0)
 							{
-								while($row = mysqli_fetch_assoc($result4))
+								while($row = mysqli_fetch_assoc($result4)) 
 								{
 									$tempVilla = "La temperatura: ".$row['dato']."&#176;";
 									//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
@@ -140,20 +143,20 @@ include("conexion.php");
 							$result5 = mysqli_query($con, $ultHum1);
 							if (mysqli_num_rows($result5) > 0)
 							{
-								while($row = mysqli_fetch_assoc($result5))
+								while($row = mysqli_fetch_assoc($result5)) 
 								{
 									$HumVilla = "La Humedad: ".$row['dato']."%";
 									//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 								}
-							}
-
+							}				
+							
 
 							$ultLum1="SELECT * FROM datos WHERE idSensor = '3' AND ubicacion = 'villa' ORDER BY idDato desc limit 1";
 							//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
 							$result6 = mysqli_query($con, $ultLum1);
 							if (mysqli_num_rows($result6) > 0)
 							{
-								while($row = mysqli_fetch_assoc($result6))
+								while($row = mysqli_fetch_assoc($result6)) 
 								{
 									$LumVilla = "La Luminocidad: ".$row['dato']."%";
 									//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
@@ -168,7 +171,7 @@ include("conexion.php");
 							$result7 = mysqli_query($con, $ultTemp2);
 							if (mysqli_num_rows($result7) > 0)
 							{
-								while($row = mysqli_fetch_assoc($result7))
+								while($row = mysqli_fetch_assoc($result7)) 
 								{
 									$tempCoquimatlan = "La temperatura: ".$row['dato']."&#176;";
 									//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
@@ -179,20 +182,20 @@ include("conexion.php");
 							$result8 = mysqli_query($con, $ultHum2);
 							if (mysqli_num_rows($result8) > 0)
 							{
-								while($row = mysqli_fetch_assoc($result8))
+								while($row = mysqli_fetch_assoc($result8)) 
 								{
 									$HumCoquimatlan = "La Humedad: ".$row['dato']."%";
 									//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 								}
-							}
-
+							}				
+							
 
 							$ultLum2="SELECT * FROM datos WHERE idSensor = '3' AND ubicacion = 'coquimatlan' ORDER BY idDato desc limit 1";
 							//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
 							$result9 = mysqli_query($con, $ultLum2);
 							if (mysqli_num_rows($result9) > 0)
 							{
-								while($row = mysqli_fetch_assoc($result9))
+								while($row = mysqli_fetch_assoc($result9)) 
 								{
 									$LumCoquimatlan = "La Luminocidad: ".$row['dato']."%";
 									//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
@@ -200,13 +203,13 @@ include("conexion.php");
 							}
 
 							$climaCoquimatlan ="Clima actual:"."<br>".$tempCoquimatlan."<br>".$HumCoquimatlan."<br>".$LumCoquimatlan;
-							mysqli_close($con);
+							mysqli_close($con);			
 
 						?>
-				<div class="Mapa">
-						<img id="MapaColima"  src="images/estadoColima.png"  usemap="#EstadoColima"/>
+				<div class="Mapa"  style="padding-left: 33%;"">
+						<img id="MapaColima"  src="images/estadocolima.png" style="border: 0px;position: absolute;left: 0px;top: 0px;padding: 0px;opacity: 0;margin-right: 0px;margin-left: 0px;margin-top: 0px;margin-bottom: 0px; "" usemap="#EstadoColima"/>
 		    			<div id="selections" style="float:right;"></div>
-
+			
 						<script type="text/javascript">
 					$(document).ready(function () {
 						var image = $('#MapaColima');
@@ -214,14 +217,14 @@ include("conexion.php");
 					        Colima: '<?=$climaColima?>',
 					        Villa:'<?=$climaVilla?>',
 					        Coquimatlan: '<?=$climaCoquimatlan?>'
-
+					        
 					    };
 					    var defaultDipTooltip = 'I know you want the dip. But it\'s loaded with saturated fat, just skip it '
 			        		+'and enjoy as many delicious, crisp vegetables as you can eat.';
 		    			var defaultColima= '<?=$climaColima?>';
 			        	var defaultVilla = '<?=$climaVilla?>';
 			        	var defaultCoquimatlan = '<?=$climaCoquimatlan?>';
-
+		    		
 		    			image.mapster(
 				    	{
 				        fillOpacity: 0.4,
@@ -233,23 +236,25 @@ include("conexion.php");
 				        singleSelect: true,
 				        mapKey: 'name',
 				        listKey: 'name',
+				        
 
-				        onClick: function (e) {
 
+				        onMouseover: function (e) {
+				            
 				            var newToolColima = defaultColima;
 				            var newToolVilla = defaultVilla;
 				            var newToolCoquimatlan = defaultCoquimatlan;
-
+				            
 				            // update text depending on area selected
 				            //$('#selections').html(xref[e.key]);
-
+				            
 				            // if Asparagus selected, change the tooltip
 				            /*if (e.key === 'Colima') {
 				                newToolTip = "OK. I know I have come down on the dip before, but let's be real. "
 				                    +"Raw asparagus without any of that delicious ranch and onion dressing "
 				                    +"slathered all over it is not so good.";
 				            }*/
-				            image.mapster('set_options', {
+				            image.mapster('set_options', { 
 				                areas: [{
 				                    key: "Colima",
 				                    toolTip: newToolColima
@@ -266,8 +271,9 @@ include("conexion.php");
 				                    ]
 				                });
 				        },
+				        
 				        showToolTip: true
-
+				        	
 				    	});
 					});
 						</script>
@@ -281,107 +287,14 @@ include("conexion.php");
 
 							<area id="Colima" name="Colima" href="#" alt="Colima" title="Colima" shape="poly" coords="507,301,511,286,523,280,530,270,536,264,542,258,540,242,540,231,529,221,528,212,529,199,540,174,533,158,514,157,510,151,479,168,479,161,474,156,476,150,466,147,472,135,461,134,472,112,467,110,447,141,425,148,422,176,416,185,402,191,420,208,424,218,441,220,446,210,478,223,476,239,491,236,502,249,505,263,502,275,506,284,503,290"/>
 						</map>
-
+					
 				</div>
 			</div>
 
 
-			<div class="forecast-table"><!--Tabla del clima con prontostico-->
-				<div class="container"><!--Div exterior-->
-					<div class="forecast-container"><!--Div interior-->
-						<div class="today forecast">
-							<div class="forecast-header">
-								<div class="day">Monday</div>
-								<div class="date">6 Oct</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="location">New York</div>
-								<div class="degree">23<sup>o</sup>C</div>
-
-								<div class="forecast-icon"><img src="images/icons/icon-1.svg" alt="" width=90></div>
-
-								<span><img src="images/icon-umberella.png" alt="">20%</span>
-								<span><img src="images/icon-wind.png" alt="">18km/h</span>
-								<span><img src="images/icon-compass.png" alt="">East</span>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Tuesday</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-3.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Wednesday</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-5.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Thursday</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-7.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Friday</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-12.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Saturday</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-13.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Sunday</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-14.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 			<main class="main-content">
-
+				
 
 				<div class="fullwidth-block" data-bg-color="#262936">
 					<div class="container">
@@ -411,43 +324,14 @@ include("conexion.php");
 					</div>
 				</div>
 
-				<div class="fullwidth-block">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-4">
-								<h2 class="section-title">Application features</h2>
-								<ul class="arrow-feature">
-									<li>
-										<h3>Natus error sit voluptatem accusantium</h3>
-										<p>Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
-									</li>
-									<li>
-										<h3>Natus error sit voluptatem accusantium</h3>
-										<p>Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
-									</li>
-									<li>
-										<h3>Natus error sit voluptatem accusantium</h3>
-										<p>Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
-									</li>
-								</ul>
-							</div>
-
-						</div>
-					</div>
-				</div>
 			</main> <!-- .main-content -->
 
 
 			<footer class="site-footer">
 				<div class="container">
-
-							<div class="social-links">
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-google-plus"></i></a>
-								<a href="#"><i class="fa fa-pinterest"></i></a>
-							</div>
-
+					
+							
+						
 
 					<p class="colophon">Copyright 2016 Tlaloc Company. All rights reserved</p><br>
 					<p class="colophon">with love... 5 B ♥</p>
@@ -457,7 +341,7 @@ include("conexion.php");
 	</div>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
-
+		
 	</body>
 
 </html>

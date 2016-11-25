@@ -3,11 +3,11 @@
 
 */
 .ContenedorMapa{
-  background-position: center;
+ background-position: center;
   text-align: center;
   padding-top: 60px;
+  margin-bottom: 50px;
 }
-
 #MapaColima {
       margin: 50px;
     padding: 50px;
@@ -15,7 +15,7 @@
     -webkit-border-radius: 30px 30px 30px 30px;
     border: 0px solid #000000;
     background: #323544;
-}
+} 
 .fullwidth2-block {
  
    align-items: center;
@@ -76,7 +76,6 @@ margin:0px auto;
   }
 .colophon{
 margin: 0px auto;
-    padding-left: 15%;
 }
 .col2-md-6{
 
@@ -102,6 +101,7 @@ margin: 0px auto;
 
 }
 .antecedentes{
+  text-align: left;
   background: #262936;
   border-radius: 10px;
   padding: 20px;
@@ -110,6 +110,7 @@ margin: 0px auto;
 .container{
   padding-left: 0px;
   width: 330px;
+  text-align: center;
 
 }
 
@@ -2106,10 +2107,7 @@ form textarea {
 .site-footer {
   background: #262936;
   padding: 50px 0;
-
-  text-align: center;
-
-
+  
 }
 .site-footer .subscribe-form {
   position: relative;

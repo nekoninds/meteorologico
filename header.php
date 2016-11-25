@@ -8,12 +8,13 @@ include("conexion.php");
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		
 		<title>Estacion Metereologica</title>
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
-		<link href="fonts/font-awesome.min.classs" rel="stylesheet" type="text/css">
+	
 
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
@@ -41,7 +42,7 @@ include("conexion.php");
 	include('HumedadColimaGrafica.php');
 	include('LuminocidadColimaGrafica.php');
 ?>
-</script>
+
 	</head>
 
 
@@ -64,10 +65,10 @@ include("conexion.php");
 			<div class="site-header"><!-- Encabezado div exterior-->
 				<div class="hero" data-bg-image="images/nubes-banner2.jpg">
 					<div class="container"><!--Encabezado div interior-->
-						<a href="index.html" class="branding">
+						<a href="index.php" class="branding">
 							<img src="images/logo.png" alt="" class="logo"><!--Logo de la pagina-->
 							<div class="logo-type"><!--Contenedor del titulo-->
-								<h1 class="site-title">Estacion metereologica</h1><!--Titulo de la pagina-->
-								<small class="site-description">Proyecto Integrador</small><!--Letras pequeñas-->
+								<h1 class="site-title">Tlaloc</h1><!--Titulo de la pagina-->
+								<small class="site-description">Estación Meteorológica</small><!--Letras pequeñas-->
 							</div>
 						</a>

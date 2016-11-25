@@ -27,6 +27,7 @@
 
 			
 
+
 				</div>
 			</div> <!-- .site-header -->
 
@@ -37,6 +38,11 @@
 						<span>Campus Villa de Álvarez</span>
 					</div>
 				</div>
+				<?php //Ejemplo curso PHP aprenderaprogramar.com
+					$time = time();
+
+				?>
+				
 				<div class="fullwidth-block">
 					<div class="container">
 						<div class="row">
@@ -50,97 +56,415 @@
 										<div class="tabla"><div class="forecast-table">
 										<div class="container" style="padding-left: 0px; width: 962px;">
 										<div class="forecast2-container" style="margin-top: 30px">
-											<div class="today forecast">
-												<div class="forecast-header">
-													<div class="day">Monday</div>
-													<div class="date">6 Oct</div>
-												</div> <!-- .forecast-header -->
-												<div class="forecast-content">
-													<div class="location">New York</div>
-													<div class="degree">
-														<div class="num">23<sup>o</sup>C</div>
-														<div class="forecast-icon" style="
-														    width: 100px;
-    														margin-bottom: 0px;
-  														 	height: 30px;">
-															<img src="images/icons/icon-1.svg" alt="" width=50 style="padding-top: 15px; margin-top: -63px; margin-left: 120px;">
-														</div>	
-													</div>
-													<span><img src="images/icon-umberella.png" alt="">20%</span>
-													<span><img src="images/icon-wind.png" alt="">18km/h</span>
-													<span><img src="images/icon-compass.png" alt="">East</span>
-												</div>
-											</div>
+											
 											<div class="forecast">
 												<div class="forecast-header">
-													<div class="day">Tuesday</div>
+													<div class="day"><?php echo date("Y-m-d ", $time-518400);?></div>
 																	</div> <!-- .forecast-header -->
 												<div class="forecast-content">
-													<div class="forecast-icon">
-														<img src="images/icons/icon-3.svg" alt="" width=48>
+													<div>
+														<?php
+															$Prom6="SELECT AVG(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa' AND fecha = '".date("Y-m-d ", $time - 518400)."' ORDER BY idDato";
+															$ResProm6 = mysqli_query($con, $Prom6);
+															if (mysqli_num_rows($ResProm6) > 0)
+															{
+
+																while($row = mysqli_fetch_assoc($ResProm6)) 
+																{
+																	echo "Promedio: " .round($row['AVG(dato)'],2);
+																	
+																}
+															}
+
+
+
+														?>
+														<sup>o</sup>C		
 													</div>
-													<div class="degree">23<sup>o</sup>C</div>
-													<small>18<sup>o</sup></small>
+													<div>
+														<?php
+															$Mayor6="SELECT MAX(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 518400)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMayor6 = mysqli_query($con, $Mayor6);
+															if (mysqli_num_rows($ResMayor6) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMayor6)) 
+																{
+																	echo "Maxima: ".$row['MAX(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
+													<div>
+														<?php
+															$Menor6="SELECT MIN(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time -518400)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMenor6 = mysqli_query($con, $Menor6);
+															if (mysqli_num_rows($ResMenor6) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMenor6)) 
+																{
+																	echo "Minima: ".$row['MIN(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
 												</div>
 											</div>
 											<div class="forecast">
 												<div class="forecast-header">
-													<div class="day">Wednesday</div>
+													<div class="day"><?php echo date("Y-m-d ", $time-432000);?></div>
 												</div> <!-- .forecast-header -->
 												<div class="forecast-content">
-													<div class="forecast-icon">
-														<img src="images/icons/icon-5.svg" alt="" width=48>
+													<div>
+														<?php
+															$Prom5="SELECT AVG(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa' AND fecha = '".date("Y-m-d ", $time - 432000)."' ORDER BY idDato";
+															$ResProm5 = mysqli_query($con, $Prom5);
+															if (mysqli_num_rows($ResProm5) > 0)
+															{
+
+																while($row = mysqli_fetch_assoc($ResProm5)) 
+																{
+																	echo "Promedio: " .round($row['AVG(dato)'],2);
+																	
+																}
+															}
+
+
+
+														?>
+														<sup>o</sup>C		
 													</div>
-													<div class="degree">23<sup>o</sup>C</div>
-													<small>18<sup>o</sup></small>
+													<div>
+														<?php
+															$Mayor5="SELECT MAX(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 432000)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMayor5 = mysqli_query($con, $Mayor5);
+															if (mysqli_num_rows($ResMayor5) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMayor5)) 
+																{
+																	echo "Maxima: ".$row['MAX(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
+													<div>
+														<?php
+															$Menor5="SELECT MIN(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 432000)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMenor5 = mysqli_query($con, $Menor5);
+															if (mysqli_num_rows($ResMenor5) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMenor5)) 
+																{
+																	echo "Minima: ".$row['MIN(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
 												</div>
 											</div>
 											<div class="forecast">
 												<div class="forecast-header">
-													<div class="day">Thursday</div>
+													<div class="day"><?php echo date("Y-m-d ", $time-345600);?></div>
 												</div> <!-- .forecast-header -->
 												<div class="forecast-content">
-													<div class="forecast-icon">
-														<img src="images/icons/icon-7.svg" alt="" width=48>
+													<div>
+														<?php
+															$Prom4="SELECT AVG(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa' AND fecha = '".date("Y-m-d ", $time - 345600)."' ORDER BY idDato";
+															$ResProm4 = mysqli_query($con, $Prom4);
+															if (mysqli_num_rows($ResProm4) > 0)
+															{
+
+																while($row = mysqli_fetch_assoc($ResProm4)) 
+																{
+																	echo "Promedio: " .round($row['AVG(dato)'],2);
+																	
+																}
+															}
+
+
+
+														?>
+														<sup>o</sup>C		
 													</div>
-													<div class="degree">23<sup>o</sup>C</div>
-													<small>18<sup>o</sup></small>
+													<div>
+														<?php
+															$Mayor4="SELECT MAX(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 345600)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMayor4 = mysqli_query($con, $Mayor4);
+															if (mysqli_num_rows($ResMayor4) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMayor4)) 
+																{
+																	echo "Maxima: ".$row['MAX(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
+													<div>
+														<?php
+															$Menor4="SELECT MIN(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 345600)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMenor4 = mysqli_query($con, $Menor4);
+															if (mysqli_num_rows($ResMenor4) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMenor4)) 
+																{
+																	echo "Minima: ".$row['MIN(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
 												</div>
 											</div>
 											<div class="forecast">
 												<div class="forecast-header">
-													<div class="day">Friday</div>
+													<div class="day"><?php echo date("Y-m-d ", $time-259200);?></div>
 												</div> <!-- .forecast-header -->
 												<div class="forecast-content">
-													<div class="forecast-icon">
-														<img src="images/icons/icon-12.svg" alt="" width=48>
+													<div>
+														<?php
+															$Prom3="SELECT AVG(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa' AND fecha = '".date("Y-m-d ", $time - 259200)."' ORDER BY idDato";
+															$ResProm3 = mysqli_query($con, $Prom3);
+															if (mysqli_num_rows($ResProm3) > 0)
+															{
+
+																while($row = mysqli_fetch_assoc($ResProm3)) 
+																{
+																	echo "Promedio: " .round($row['AVG(dato)'],2);
+																	
+																}
+															}
+
+
+
+														?>
+														<sup>o</sup>C		
 													</div>
-													<div class="degree">23<sup>o</sup>C</div>
-													<small>18<sup>o</sup></small>
+													<div>
+														<?php
+															$Mayor3="SELECT MAX(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 259200)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMayor3 = mysqli_query($con, $Mayor3);
+															if (mysqli_num_rows($ResMayor3) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMayor3)) 
+																{
+																	echo "Maxima: ".$row['MAX(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
+													<div>
+														<?php
+															$Menor3="SELECT MIN(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 259200)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMenor3 = mysqli_query($con, $Menor3);
+															if (mysqli_num_rows($ResMenor3) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMenor3)) 
+																{
+																	echo "Minima: ".$row['MIN(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
 												</div>
 											</div>
 											<div class="forecast">
 												<div class="forecast-header">
-													<div class="day">Saturday</div>
+													<div class="day"><?php echo date("Y-m-d ", $time-172800);?></div>
 												</div> <!-- .forecast-header -->
 												<div class="forecast-content">
-													<div class="forecast-icon">
-														<img src="images/icons/icon-13.svg" alt="" width=48>
+													<div>
+														<?php
+															$Prom2="SELECT AVG(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa' AND fecha = '".date("Y-m-d ", $time - 172800)."' ORDER BY idDato";
+															$ResProm2 = mysqli_query($con, $Prom2);
+															if (mysqli_num_rows($ResProm2) > 0)
+															{
+
+																while($row = mysqli_fetch_assoc($ResProm2)) 
+																{
+																	echo "Promedio: " .round($row['AVG(dato)'],1);
+																	
+																}
+															}
+
+
+
+														?>
+														<sup>o</sup>C		
 													</div>
-													<div class="degree">23<sup>o</sup>C</div>
-													<small>18<sup>o</sup></small>
+													<div>
+														<?php
+															$Mayor2="SELECT MAX(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 172800)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMayor2 = mysqli_query($con, $Mayor2);
+															if (mysqli_num_rows($ResMayor2) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMayor2)) 
+																{
+																	echo "Maxima: ".$row['MAX(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
+													<div>
+														<?php
+															$Menor2="SELECT MIN(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 172800)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMenor2 = mysqli_query($con, $Menor2);
+															if (mysqli_num_rows($ResMenor2) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMenor2)) 
+																{
+																	echo "Minima: ".$row['MIN(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
 												</div>
 											</div>
 											<div class="forecast">
 												<div class="forecast-header">
-													<div class="day">Sunday</div>
+													<div class="day"><?php echo date("Y-m-d ", $time-86400);?></div>
 												</div> <!-- .forecast-header -->
 												<div class="forecast-content">
-													<div class="forecast-icon">
-														<img src="images/icons/icon-14.svg" alt="" width=48>
+													
+													<div>
+														<?php
+															$Prom = "SELECT AVG(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa' AND fecha = '".date("Y-m-d ", $time - 86400)."'";
+															$ResProm = mysqli_query($con, $Prom);
+															if (mysqli_num_rows($ResProm) > 0)
+															{
+
+																while($row = mysqli_fetch_assoc($ResProm)) 
+																{
+																	echo "Promedio: " .round($row['AVG(dato)'],2);
+																	
+																}
+															}
+
+
+
+														?>
+														<sup>o</sup>C		
 													</div>
-													<div class="degree">23<sup>o</sup>C</div>
-													<small>18<sup>o</sup></small>
+													<div>
+														<?php
+															$Mayor="SELECT MAX(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 86400)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMayor = mysqli_query($con, $Mayor);
+															if (mysqli_num_rows($ResMayor) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMayor)) 
+																{
+																	echo "Maxima: ".$row['MAX(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
+													<div>
+														<?php
+															$Menor="SELECT MIN(dato) FROM datos WHERE idSensor = '1' AND ubicacion = 'villa'AND fecha = '".date("Y-m-d ", $time - 86400)."'";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$ResMenor = mysqli_query($con, $Menor);
+															if (mysqli_num_rows($ResMenor) > 0)
+															{
+																while($row = mysqli_fetch_assoc($ResMenor)) 
+																{
+																	echo "Minima: ".$row['MIN(dato)'];
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}
+														?>
+														<sup>o</sup>C	
+													</div>
+												</div>
+											</div>
+											<!--Dia Actual-->
+											<div class="today forecast" style="width: 210px;">
+												<div class="forecast-header">
+													<div class="date"><span> Hoy es: </span><?php echo date("Y-m-d ", $time);?></div>
+												</div> <!-- .forecast-header -->
+												<div class="forecast-content">
+													<div class="location">Colima</div>
+													<div class="degree">
+														<div >
+															<?php
+																$ultTemp="SELECT * FROM datos WHERE idSensor = '1' AND ubicacion = 'villa' AND fecha = '".date("Y-m-d ", $time)."' ORDER BY idDato desc limit 1";
+																$result1 = mysqli_query($con, $ultTemp);
+																if (mysqli_num_rows($result1) > 0)
+																{
+																	while($row = mysqli_fetch_assoc($result1)) 
+																	{
+																		echo $row['dato'];
+																		//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																	}
+																}
+															?><sup>o</sup>C
+															
+															<img src="images/icons/temp.png" alt="" width=50 style="padding-top: 0px; margin-top: -63px; margin-left: 0px;">
+														</div>
+															
+															
+													</div>
+													<div class="degree" style="margin-top:20px;">
+														<?php
+															$ultHum="SELECT * FROM datos WHERE idSensor = '2' AND ubicacion = 'villa' AND fecha = '".date('Y-m-d ', $time)."' ORDER BY idDato desc limit 1";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$result2 = mysqli_query($con, $ultHum);
+															if (mysqli_num_rows($result2) > 0)
+															{
+																while($row = mysqli_fetch_assoc($result2)) 
+																{
+																	echo $row['dato']."%";
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}	
+														?><img src="images/icons/hum.png" alt="" width=50 style="padding-top: 0px; margin-top: -20px; margin-left: 10px;">
+													</div>
+													<div class="degree" style="margin-top:20px;">
+														<?php
+														$ultLum="SELECT * FROM datos WHERE idSensor = '3' AND ubicacion = 'villa' AND fecha = '".date('Y-m-d ', $time)."' ORDER BY idDato desc limit 1";
+														//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+														$result3 = mysqli_query($con, $ultLum);
+														if (mysqli_num_rows($result3) > 0)
+														{
+															while($row = mysqli_fetch_assoc($result3)) 
+															{
+																echo $row['dato']."%";
+																//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+															}
+														}
+														?>
+														<img src="images/icons/lum.png" alt="" width=50 style="padding-top: 0px; margin-top: -20px; margin-left: 5px;">
+													</div>
+													
 												</div>
 											</div>
 										</div>
@@ -166,30 +490,31 @@
 								</div>
 
 							</div>
-							<div class="sidebar col-md-3 col-md-offset-1"> 	   	
-							<?php
+							<div class="sidebar col-md-3 col-md-offset-1"> 	 
+								<?php
 								if (isset($_SESSION['nickname']))
 								{
 									echo "
 									<div class='widget' style='margin-top: 54px'>
 										<h3 class='widget-title'>Consulta: </h3>
 										<ul class='arrow-list'>
-											<li><a href='graficasColima.php'>Graficas</a></li>
-											<li><a href='tablasColima.php'>Tablas</a></li>
+											<li><a href='graficasVilla.php'>Graficas</a></li>
+											<li><a href='tablasVilla.php'>Tablas</a></li>
 										</ul>
 									</div>";
 								}	
 								
-								?> 
+								?>  	
+								<!-- mapa de google -->
 							<div class="mapa2" style="width: 266px; margin-top: 60px">
 								<div class="contact-details">
-									<div class="map" data-latitude="19.264851" data-longitude="-103.742400"></div>
+									<div class="map" data-latitude="19.2490983" data-longitude="-103.699527"></div>
 									<div class="contact-info">
 									<address>
 										<img src="images/icon-marker.png" alt="">
 										<p>Estación Meteorológica <br>
 										
-										Calle Zaragoza 223, Equipamiento Urbano, 28987 Villa de Álvarez, Col.  </p>
+										Avenida Universidad 333, Las Víboras, 28040 Colima, Col.   </p>
 									</address>	
 									</div>
 								</div>
@@ -200,12 +525,19 @@
 					</div>
 				</div>
 			</main> <!-- .main-content -->
+	<footer class="site-footer">
+			<div class="container">
+				
+						<div class="social-links" style="margin: 0px auto;">
+							<a href="https://www.facebook.com/" ><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+							<a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+							<a href="https://es.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+						
 
-			<footer class="site-footer">
-				<div class="container">
-					<p class="colophon" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Tlaloc Group. All rights reserved</p>
-				</div>
-			</footer> <!-- .site-footer -->
+				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Digital Systems. All rights reserved</p>
+			</div>
+		</footer> <!-- .site-footer -->
 		</div>
 		
 		<script src="js/jquery-1.11.1.min.js"></script>
