@@ -1,8 +1,14 @@
-<html>
-<body>
+<?php
+require 'vendor/autoload.php';
 
-Welcome <?php echo $_POST["name"]; ?><br>
-Your email address is: <?php echo $_POST["email"]; ?>
 
-</body>
-</html>
+$from = new SendGrid\Email(null, "echo $_POST["email"];");
+$subject = "Cambio de Temperatura";
+$to = new SendGrid\Email(null, "hector.m.rm@hotmail.com");
+$content = new SendGrid\Content("text/plain", "echo $_POST["msj"];");
+$mail = new SendGrid\Mail($from, $subject, $to, $content);
+
+$apiKey = "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";
+$sg = new \SendGrid($apiKey);
+$sg->client->mail()->send()->post($mail);
+?>
