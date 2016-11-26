@@ -72,17 +72,19 @@ include("conexion.php");
 			<div class="antecedentes">
 				
 							
-				<p><h3> Colima es un pequeño estado del occidente de México que colinda con Jalisco, Michoacán y el océano Pacífico. 
-				En su estrecho territorio se encierra un sinfín de atractivos y una amplia gama de hermosos lugares, como Villa de Álvarez, Comala, Suchitlán, el Parque Nacional Nevado de Colima y Volcán de Fuego, y Quesería Tecomán, y bellas playas como Manzanillo, capital mundial del pez vela, entre muchas otras.<br>
+				<p><h4 style="text-align: justify; margin-left: 500px; margin-right: 500px"> 
+				Colima es un pequeño estado del occidente de México que colinda con Jalisco, Michoacán y el océano Pacífico. 
+				En su estrecho territorio se encierra un sinfín de atractivos y una amplia gama de hermosos lugares, como Villa de Álvarez, Comala, Suchitlán, el Parque Nacional Nevado de Colima y Volcán de Fuego, y Quesería Tecomán, y bellas playas como Manzanillo, capital mundial del pez vela, entre muchas otras.<br><br>
 
-				Tiene un clima tropical con una temperatura promedio de 25° C, subhúmedo en la mayoría del estado, con unos 1,000 mm anuales de precipitación pluvial. En la parte norte del municipio que colinda con el de Cuauhtémoc, la temperatura mejora en unos dos grados aproximadamente de 22 °C a 24°C, lluvia media anual de 1,000 a 1,300 mm.<br>
+				Tiene un clima tropical con una temperatura promedio de 25° C, subhúmedo en la mayoría del estado, con unos 1,000 mm anuales de precipitación pluvial. En la parte norte del municipio que colinda con el de Cuauhtémoc, la temperatura mejora en unos dos grados aproximadamente de 22 °C a 24°C, lluvia media anual de 1,000 a 1,300 mm.<br><br>
 
-				En los poblados Estampilla y Las Tunas, el clima es semiseco y muy cálido con temperatura de 26 a 28°C y precipitación anual de 600 a 700 mm.</p> <br> </h3>
+				En los poblados Estampilla y Las Tunas, el clima es semiseco y muy cálido con temperatura de 26 a 28°C y precipitación anual de 600 a 700 mm.</p> <br> <br></h4>
 			</div>
 
 
 				<!--Mapa colima Coordenadas-->
 			<div class="ContenedorMapa">
+			<p  style="text-align: center;">Arrastra el puntero sobre las areas coloreadas para mayor información</p>
 
 					<?php
 						if (isset($_SESSION['nickname']))
