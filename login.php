@@ -75,8 +75,9 @@
 							<a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
 							<a href="https://es.pinterest.com/"><i class="fa fa-pinterest"></i></a>
 
-
-				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Tlaloc Group. All rights reserved</p>
+				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Digital Systems. All rights reserved</p>
+				<p class="colophon">with love... 5 B ♥</p>
+			</div>
 			</div>
 		</footer> <!-- .site-footer -->
 

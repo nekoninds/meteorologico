@@ -302,23 +302,22 @@ include("conexion.php");
 						<div class="row">
 							<div class="col-md-4">
 								<div class="news">
-									<div class="date">06.10</div>
-									<h3><a href="#">Doloremque laudantium totam sequi </a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus. Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur maxime nisi amet doloremque.</p>
+									<h3><a href="#">Visión </a></h3>
+									<p style="text-align: justify;">Ser la empresa de referencia en el ámbito de las redes digitales y el monitoreo a distancia a nivel nacional.</p>
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="news">
-									<div class="date">06.10</div>
-									<h3><a href="#">Doloremque laudantium totam sequi </a></h3>
-									<p>Nobis architecto consequatur ab, ea, eum autem aperiam accusantium placeat vitae facere explicabo temporibus minus distinctio cum optio quis, dignissimos eius aspernatur fuga. Praesentium totam, corrupti beatae amet expedita veritatis.</p>
+									<h3><a href="#">Misión</a></h3>
+									<p style="text-align: justify;"> Acelerar la transición del mundo a un mundo conectado.</p>
+
 								</div>
 							</div>
 							<div class="col-md-4">
 								<div class="news">
-									<div class="date">06.10</div>
-									<h3><a href="#">Doloremque laudantium totam sequi </a></h3>
-									<p>Enim impedit officiis placeat qui recusandae doloremque possimus, iusto blanditiis, quam optio delectus maiores. Possimus rerum, velit cum natus eos. Cumque pariatur beatae asperiores, esse libero quas ad dolorem. Voluptates.</p>
+									<h3><a href="#">Objetivo </a></h3>
+									<p style="text-align: justify;"> Nuestro más grande objetivo como empresa, es que nuestros clientes adquieran sistemas de monitoreo de calidad y de larga duración.</p>
+
 								</div>
 							</div>
 						</div>
@@ -326,7 +325,7 @@ include("conexion.php");
 				</div>
 
 			</main> <!-- .main-content -->
-<footer class="site-footer">
+			<footer class="site-footer">
 			<div class="container">
 
 						<div class="social-links" style="margin: 0px auto;">
@@ -335,9 +334,9 @@ include("conexion.php");
 							<a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
 							<a href="https://es.pinterest.com/"><i class="fa fa-pinterest"></i></a>
 
-
 				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Digital Systems. All rights reserved</p>
 				<p class="colophon">with love... 5 B ♥</p>
+			</div>
 			</div>
 		</footer> <!-- .site-footer -->
 

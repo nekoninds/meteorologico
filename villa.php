@@ -475,12 +475,12 @@
 											<p><h1>Medidas de Prevención</h1></p>
 											<p>Es importante tomar algunas de las siguientes precauciones en caso de un desastre natural, dar clic en los enlaces para mas información.</p>
 											<ul class="arrow-list">
-												<li><a href="http://www.gob.mx/segob/acciones-y-programas/sismos-en-mexico-preparate-antes-actua-durante-revisa-despues" target="_blank">En caso de SISMO</a></li>
-												<li><a href="http://www.camafu.org.mx/index.php/noticias/articles/recomendaciones-para-prevenir-y-atender-incendios-forestales-catastroficos-que-pueden-danar-a-la-poblacion-los-bienes-y-los-recu.html" target="_blank">En caso de INCENDIO</a></li>
-
+												<li><a href="http://proteccioncivil.jalisco.gob.mx/monitoreo/volcan-el-colima" target="_blank">En caso de ERUPCIÓN VOLCÁNICA</a></li>
+												<li><a href="http://proteccioncivil.jalisco.gob.mx/servicios-y-programas/capacitacion/incendios" target="_blank">En caso de INCENDIO</a></li>
 												<li><a href="http://bienestar.salud180.com/salud-dia-dia/precauciones-en-caso-de-inundaciones" target="_blank">En caso de INUNDACION</a></li>
-												<li><a href="http://skyalert.mx/medidas-de-prevencion-que-hacer-en-caso-de-tormenta-electrica/" target="_blank">En caso de TORMENTA ELECTRICA</a></li>
-												<li><a href="http://www.proteccioncivil.col.gob.mx/boletin.php?c=NzA0MQ" target="_blank">En caso de ERUPCIÓN VOLCÁNICA</a></li>
+												<li><a href="http://www.cenapred.gob.mx/es/Publicaciones/archivos/256-INFOGRAFAPREPRATEPARAELINVIERNO.PDF" target="_blank"> En caso de INVIERNO</a></li>
+												<li><a href="http://www.cenapred.unam.mx:8080/reporteSismos/" target="_blank">En caso de SISMO</a></li>
+												<li><a href="http://www.cenapred.gob.mx/es/Publicaciones/archivos/302-INFOGRAFATORMENTASELCTRICAS.PDF" target="_blank">En caso de TORMENTA ELECTRICA</a></li>
 											</ul>
 										</div>
 										<div>
@@ -536,9 +536,9 @@
 							<a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
 							<a href="https://es.pinterest.com/"><i class="fa fa-pinterest"></i></a>
 
-
 				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Digital Systems. All rights reserved</p>
 				<p class="colophon">with love... 5 B ♥</p>
+			</div>
 			</div>
 		</footer> <!-- .site-footer -->
 		</div>
