@@ -50,20 +50,22 @@
 								</div>
 							</div>
 						</div>
+						
 						<div class="col-md-6 col-md-offset-1">
 							<h2 class="section-title">Contact us</h2>
 							<p>Digital Systems</p>
-							<form action="mail.php" method="post" class="contact-form">
-								<div class="row">
-									<div class="col-md-6"><input type="text" placeholder="Your name..." name="name"></div>
-									<div class="col-md-6"><input type="text" placeholder="Email Addresss..." name="email"></div>
+						<?php
+							"<form action='mail.php' method='post' class='contact-form'>
+								<div class='row'>
+									<div class='col-md-6'><input type='text' placeholder='Your name...'' name='name'></div>
+									<div class='col-md-6'><input type='text' placeholder='Email Addresss...'' name='email'></div>
 								</div>
-								<textarea name="" placeholder="Message..." name="msj"></textarea>
-								<div class="text-right">
-									<input type="submit" placeholder="Send message">
+								<textarea name='' placeholder='Message...'' name='msj'></textarea>
+								<div class='text-right'>
+									<input type='submit' placeholder='Send message'>
 								</div>
-							</form>
-
+							</form>"
+							?>
 
 
 
