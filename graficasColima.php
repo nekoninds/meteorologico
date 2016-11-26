@@ -102,7 +102,7 @@
 				<p class="colophon">with love... 5 B ♥</p>
 			</div>
 			</div>
-		</footer> <!-- .site-footer -->
+		</footer> <!-- .site-footer -->s
 		</div>
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
