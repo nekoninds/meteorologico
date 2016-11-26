@@ -12,7 +12,7 @@ $apiKey = getenv('SENDGRID_API_KEY');
 $sg = new \SendGrid($apiKey);
 
 $response = $sg->client->mail()->send()->post($mail);
-echo $apiKey;
+echo getenv("SENDGRID_API_KEY");
 echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
