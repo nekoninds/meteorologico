@@ -428,11 +428,11 @@
 															?><sup>o</sup>C
 
 															</div>
-																<img src="images/icons/temp.png" alt="" width=50 style="padding-top: 0px;margin-top: 0px;margin-left: 0px;width: 25px;padding-bottom: -15;padding-bottom: -30;">
+																<img src="images/icons/temp.png" alt="" width=25 style="padding-top: 0px;margin-top: 0px;margin-left: 0px;width: 25px;padding-bottom: -15;padding-bottom: -30;">
 
 
 													</div>
-													<div class="degree" style="margin-top:20px;">
+													<div class="degree">
 														<?php
 															$ultHum="SELECT * FROM datos WHERE idSensor = '2' AND ubicacion = 'colima' AND fecha = '".date('Y-m-d ', $time)."' ORDER BY idDato desc limit 1";
 															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
@@ -445,9 +445,9 @@
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
-														?><img src="images/icons/hum.png" alt="" width=50 style="padding-top: 0px; margin-top: -20px; margin-left: 10px;">
+														?><img src="images/icons/hum.png" alt="" width=25 style="padding-top: 0px;margin-top: 0px;margin-left: 0px;width: 25px;padding-bottom: -15;padding-bottom: -30;">
 													</div>
-													<div class="degree" style="margin-top:20px;">
+													<div class="degree">
 														<?php
 														$ultLum="SELECT * FROM datos WHERE idSensor = '3' AND ubicacion = 'colima' AND fecha = '".date('Y-m-d ', $time)."' ORDER BY idDato desc limit 1";
 														//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
@@ -461,7 +461,7 @@
 															}
 														}
 														?>
-														<img src="images/icons/lum.png" alt="" width=50 style="padding-top: 0px; margin-top: -20px; margin-left: 5px;">
+														<img src="images/icons/lum.png" alt="" width=25 style="padding-top: 0px;margin-top: 0px;margin-left: 0px;width: 25px;padding-bottom: -15;padding-bottom: -30;">
 													</div>
 
 												</div>
@@ -524,7 +524,6 @@
 					</div>
 				</div>
 			</main> <!-- .main-content -->
-
 			<footer class="site-footer">
 			<div class="container">
 
@@ -536,6 +535,7 @@
 
 
 				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Digital Systems. All rights reserved</p>
+				<p class="colophon">with love... 5 B ♥</p>
 			</div>
 		</footer> <!-- .site-footer -->
 		</div>

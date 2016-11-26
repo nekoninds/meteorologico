@@ -326,18 +326,22 @@ include("conexion.php");
 				</div>
 
 			</main> <!-- .main-content -->
+<footer class="site-footer">
+			<div class="container">
+
+						<div class="social-links" style="margin: 0px auto;">
+							<a href="https://www.facebook.com/" ><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+							<a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+							<a href="https://es.pinterest.com/"><i class="fa fa-pinterest"></i></a>
 
 
-			<footer class="site-footer">
-				<div class="container">
+				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Digital Systems. All rights reserved</p>
+				<p class="colophon">with love... 5 B ♥</p>
+			</div>
+		</footer> <!-- .site-footer -->
 
-
-
-
-					<p class="colophon">Copyright 2016 Tlaloc Company. All rights reserved</p><br>
-					<p class="colophon">with love... 5 B ♥</p>
-				</div>
-			</footer> <!-- .site-footer -->
+			
 		</div>
 	</div>
 		<script src="js/plugins.js"></script>
