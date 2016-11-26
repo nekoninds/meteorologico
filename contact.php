@@ -85,6 +85,14 @@
 			</div>
 		</footer> <!-- .site-footer -->
 		
+<form action="mail2.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+
+
+
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDbuykDwQI1f_dhwNFm_O-OAOovsKW5huI&sensor=false"></script>
 		<script src="js/plugins.js"></script>
