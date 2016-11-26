@@ -66,9 +66,9 @@ include("conexion.php");
 				<div class="hero" data-bg-image="images/nubes-banner2.jpg">
 					<div class="container"><!--Encabezado div interior-->
 						<a href="index.php" class="branding">
-							<img src="images/logo.png" alt="" class="logo"><!--Logo de la pagina-->
-							<div class="logo-type"><!--Contenedor del titulo-->
-								<h1 class="site-title">Tlaloc</h1><!--Titulo de la pagina-->
-								<small class="site-description">Estación Meteorológica</small><!--Letras pequeñas-->
-							</div>
+						<img src="images/logo.jpg" alt="" class="logo" style="width: 362px; height: 120px; padding-right: 0px; margin-right: 0px;margin-bottom: 10px;"> <!--Logo de la pagina-->
+						</a>
+
+					<!-- Menu.................. Aqui Hay que hacerlo a la izquierda-->
+					<div class="main-navigation" style="padding-top: 50px;
 						</a>
