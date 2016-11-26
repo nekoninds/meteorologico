@@ -53,7 +53,7 @@
 						<div class="col-md-6 col-md-offset-1">
 							<h2 class="section-title">Contact us</h2>
 							<p>Digital Systems</p>
-							<form action="mail.php" method="post" class="contact-form">
+							<form action="#" method="post" class="contact-form">
 								<div class="row">
 									<div class="col-md-6"><input type="text" placeholder="Your name..." name="name"></div>
 									<div class="col-md-6"><input type="text" placeholder="Email Addresss..." name="email"></div>
@@ -63,6 +63,26 @@
 									<input type="submit" placeholder="Send message">
 								</div>
 							</form>
+
+<?php
+require 'vendor/autoload.php';
+
+
+$from = new SendGrid\Email(null, "echo $_POST['email']; echo $_REQUEST['email']");
+$subject = "Cambio de Temperatura";
+$to = new SendGrid\Email(null, "hector.m.rm@hotmail.com");
+$content = new SendGrid\Content("text/plain", "echo $_POST["msj"]; echo $_REQUEST['msj'];");
+$mail = new SendGrid\Mail($from, $subject, $to, $content);
+
+$apiKey = "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";
+$sg = new \SendGrid($apiKey);
+$sg->client->mail()->send()->post($mail);
+?>
+
+
+
+
+
 
 						</div>
 					</div>
