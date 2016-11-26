@@ -23,6 +23,7 @@ include("conexion.php");
 		<script src="js/mapster.js"></script>
 	</head>
 <body>
+<?php include("mail.php") ?>
 	<?php
 
 			if (isset($_SESSION['nickname']))
