@@ -69,7 +69,7 @@ include("conexion.php");
 
 				</div>
 			</div> <!-- .site-header -->
-			<div class="antecedentes">
+			<div class="antecedentes" style=" margin-bottom: 0px; padding-bottom: -10; padding-top: 50px; padding-bottom: 0px;" >
 				
 				<h2 style="text-align: center;">Historia </h2>			
 				<p style="text-align: justify; margin-left: 500px; margin-right: 500px"> 
