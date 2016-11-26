@@ -1797,12 +1797,7 @@ form textarea {
   padding-left: 100px;
   position: relative;
 }
-.news:after {
-  content: " ";
-  width: 12px;
-  height: 7px;
-  display: block;
-}
+
 .news .date {
   position: absolute;
   top: 0;
