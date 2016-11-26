@@ -9,10 +9,10 @@ $content = new SendGrid\Content("text/plain", "Hello, Email!");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 $apiKey = getenv('SENDGRID_API_KEY');
+echo $apiKey;
 $sg = new \SendGrid($apiKey);
 
 $response = $sg->client->mail()->send()->post($mail);
-echo getenv("SENDGRID_API_KEY");
 echo $response->statusCode();
 echo $response->headers();
 echo $response->body();
