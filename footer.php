@@ -9,7 +9,7 @@
 <body>
 	<footer class="site-footer0" style="background: #262936; padding: 25px 0;">
 			<div class="container0" style="padding-left: 0px; width: 330px; text-align: center;">
-				<div class="social-links0" style="margin: 0px auto;">
+				<div class="social-links0" style="width: 40px; height: 40px; display: inline-block; border-radius: 50%; background: #1e202b; color: #009ad8; text-align: center; line-height: 2; -webkit-transition: .3s ease; transition: .3s ease; font-size: 20px; font-size: 1.4285714286em;margin: 0px auto;">
 					<a href="https://www.facebook.com/" ><i class="fa fa-facebook"></i></a>
 					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
 					<a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
