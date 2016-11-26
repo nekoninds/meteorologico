@@ -71,7 +71,7 @@ include("conexion.php");
 			</div> <!-- .site-header -->
 			<div class="antecedentes">
 				
-							
+				<h2 style="text-align: justify center;">Historia </h2>			
 				<p><h4 style="text-align: justify; margin-left: 500px; margin-right: 500px"> 
 				Colima es un pequeño estado del occidente de México que colinda con Jalisco, Michoacán y el océano Pacífico. 
 				En su estrecho territorio se encierra un sinfín de atractivos y una amplia gama de hermosos lugares, como Villa de Álvarez, Comala, Suchitlán, el Parque Nacional Nevado de Colima y Volcán de Fuego, y Quesería Tecomán, y bellas playas como Manzanillo, capital mundial del pez vela, entre muchas otras.<br><br>
