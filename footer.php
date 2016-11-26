@@ -1,25 +1,28 @@
-		<footer class="site-footer">
+<!DOCTYPE html>
+<html>
+<head>		
+		<title>Footer</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<footer class="site-footer">
 			<div class="container">
-
-						<div class="social-links">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-							<a href="#"><i class="fa fa-pinterest"></i></a>
-						</div><br>
-
-				<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Digital Systems. All rights reserved</p>
-
-
+				<div class="social-links" style="margin: 0px auto;">
+					<a href="https://www.facebook.com/" ><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+					<a href="https://es.pinterest.com/"><i class="fa fa-pinterest"></i></a>
+		
+					<p class="colophon2" style="text-align: center;">Copyright 2016 Universidad de Colima. Designed by Digital Systems. All rights reserved</p>
+					<p class="colophon">with love... 5 B ♥</p>
+				</div>
 			</div>
-		</footer> <!-- .site-footer -->
+	</footer>
 
-
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/app.js"></script>
-
-	</body>
-
-
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+</body>
 </html>
