@@ -7,8 +7,8 @@
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-	<footer class="site-footer0">
-			<div class="container0">
+	<footer class="site-footer0" style="background: #262936; padding: 25px 0;">
+			<div class="container0" style="padding-left: 0px; width: 330px; text-align: center;">
 				<div class="social-links0" style="margin: 0px auto;">
 					<a href="https://www.facebook.com/" ><i class="fa fa-facebook"></i></a>
 					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
