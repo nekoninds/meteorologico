@@ -317,7 +317,6 @@ include("conexion.php");
 						<div class="row">
 							<div class="col-md-4">
 								<div class="news">
-								<div class="estilacho" style="text-align: center;">
 									<h3><a href="#">Visión </a></h3>
 									<p style="text-align: justify;">Ser la empresa de referencia en el ámbito de las redes digitales y el monitoreo a distancia a nivel nacional.</p>
 								</div>
@@ -339,7 +338,6 @@ include("conexion.php");
 						</div>
 					</div>
 				</div>
-			</div>
 
 			</main> <!-- .main-content -->
 			<footer class="site-footer">
