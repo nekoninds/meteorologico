@@ -408,7 +408,7 @@
 													<div class="date"><span> Hoy es: </span><?php echo date("Y-m-d ", $time);?></div>
 												</div> <!-- .forecast-header -->
 												<div class="forecast-content">
-													<div class="location">Colima</div>
+													<div class="location">Coquimatlán</div>
 													<div class="degree">
 														<div >
 															<?php
