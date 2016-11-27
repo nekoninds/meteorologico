@@ -66,7 +66,7 @@ include("conexion.php");
 				<div class="hero" data-bg-image="images/nubes-banner2.jpg">
 					<div class="container"><!--Encabezado div interior-->
 						<a href="index.php" class="branding">
-						<img src="images/logo.jpg" alt="" class="logo" style="width: 362px; height: 120px; padding-right: 0px; margin-right: 0px;margin-bottom: 10px;"> <!--Logo de la pagina-->
+						<img src="images/logo.png" alt="" class="logo" style="width: 362px; height: 120px; padding-right: 0px; margin-right: 0px;margin-bottom: 10px;"> <!--Logo de la pagina-->
 						</a>
 
 					<!-- Menu.................. Aqui Hay que hacerlo a la izquierda-->

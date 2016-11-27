@@ -89,7 +89,7 @@ include("conexion.php");
 
 
 				<!--Mapa colima Coordenadas-->
-			<div class="ContenedorMapa">
+			<div class="ContenedorMapa" id="adaptativo">
 			<p  style="text-align: center;">Arrastra el puntero sobre las areas coloreadas para mayor información</p>
 
 					<?php
