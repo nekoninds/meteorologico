@@ -90,7 +90,7 @@ include("conexion.php");
 
 				<!--Mapa colima Coordenadas-->
 			<div class="ContenedorMapa">
-			<p  style="text-align: center;">Arrastra el puntero sobre las areas coloreadas para mayor información</p>
+			<p  style="text-align: center;" id="adaptativo">Arrastra el puntero sobre las areas coloreadas para mayor información</p>
 
 					<?php
 						if (isset($_SESSION['nickname']))
