@@ -1,19 +1,5 @@
 <?php
   include("header.php");
-  require 'vendor/autoload.php';
-
-  if(isset($_POST['submit'])){
-	
-	$to = new SendGrid\Email(null, "mumo.crls@gmail.com");
-    $from = new SendGrid\Email(null, $_POST['email']);
-    $subject = "Contacto: " . $_POST['name'];
-	$content = new SendGrid\Content("text/plain", $_POST['message']);
-    $mail = new SendGrid\Mail($from, $subject, $to, $content);
-    $apiKey = "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";
-    
-    $sg = new \SendGrid($apiKey);
-    $sg->client->mail()->send()->post($mail);
-  }
 ?>
 
 					<!-- Default snippet for navigation -->
@@ -68,7 +54,7 @@
 						<div class="col-md-6 col-md-offset-1">
 							<h2 class="section-title">Contact us</h2>
 							<p>Digital Systems</p>
-							<form action="" method="post" class="contact-form">
+							<form action="mailer.php" method="post" class="contact-form">
 								<div class="row">
 									<div class="col-md-6"><input type="text" placeholder="Your name..." name="name"></div>
 									<div class="col-md-6"><input type="email" placeholder="Email Addresss..." name="email"></div>
