@@ -17,7 +17,7 @@ include("conexion.php");
 		<link href="fonts/font-awesome.min.classs" rel="stylesheet" type="text/css">
 
 		<!-- Loading main css file -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styleA.css">
 
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/mapster.js"></script>
