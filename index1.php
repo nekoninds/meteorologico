@@ -311,7 +311,7 @@ include("conexion.php");
 
 			<main class="main-content">
 
-
+<div class="estilacho" style="text-align: center;">
 				<div class="fullwidth-block" data-bg-color="#262936">
 					<div class="container">
 						<div class="row">
@@ -338,6 +338,7 @@ include("conexion.php");
 						</div>
 					</div>
 				</div>
+			</div>
 
 			</main> <!-- .main-content -->
 			<footer class="site-footer">
