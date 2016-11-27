@@ -73,7 +73,7 @@ include("conexion.php");
 <main class="main-content">
 
 
-				<div class="fullwidth-block" data-bg-color="#262936">
+			
 					<div class="container">
 						
 			<div class="antecedentes" style=" margin-bottom: 0px; padding-bottom: -10; padding-top: 50px; padding-bottom: 0px;" >
@@ -88,11 +88,11 @@ include("conexion.php");
 				En los poblados Estampilla y Las Tunas, el clima es semiseco y muy cálido con temperatura de 26 a 28°C y precipitación anual de 600 a 700 mm.</p> <br> <br>
 			</div>
 
-					</div>
+					
 				</div>
 
 			</main> <!-- .main-content -->
-			
+
 
 				<!--Mapa colima Coordenadas-->
 			<div class="ContenedorMapa">
