@@ -78,7 +78,7 @@ include("conexion.php");
 
 				Tiene un clima tropical con una temperatura promedio de 25° C, subhúmedo en la mayoría del estado, con unos 1,000 mm anuales de precipitación pluvial. En la parte norte del municipio que colinda con el de Cuauhtémoc, la temperatura mejora en unos dos grados aproximadamente de 22 °C a 24°C, lluvia media anual de 1,000 a 1,300 mm.<br><br>
 
-				En los poblados Estampilla y Las Tunas, el clima es semiseco y muy cálido con temperatura de 26 a 28°C y precipitación anual de 600 a 700 mm.</p> <br> <br><
+				En los poblados Estampilla y Las Tunas, el clima es semiseco y muy cálido con temperatura de 26 a 28°C y precipitación anual de 600 a 700 mm.</p> <br> <br>
 			</div>
 
 
