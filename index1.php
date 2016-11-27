@@ -311,12 +311,13 @@ include("conexion.php");
 
 			<main class="main-content">
 
-<div class="estilacho" style="text-align: center;">
+
 				<div class="fullwidth-block" data-bg-color="#262936">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-4">
 								<div class="news">
+								<div class="estilacho" style="text-align: center;">
 									<h3><a href="#">Visión </a></h3>
 									<p style="text-align: justify;">Ser la empresa de referencia en el ámbito de las redes digitales y el monitoreo a distancia a nivel nacional.</p>
 								</div>
