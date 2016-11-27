@@ -4,7 +4,7 @@
 
   if(isset($_POST['submit'])){
 	
-	$to = new SendGrid\Email(null, "hector.m.rm@hotmail.com");
+	$to = new SendGrid\Email(null, "mumo.crls@gmail.com");
     $from = new SendGrid\Email(null, $_POST['email']);
     $subject = "Contacto: " . $_POST['name'];
 	$content = new SendGrid\Content("text/plain", $_POST['message']);
