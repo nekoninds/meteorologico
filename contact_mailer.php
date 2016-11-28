@@ -11,4 +11,5 @@
   $apiKey = "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";
   $sg = new \SendGrid($apiKey);
   $sg->client->mail()->send()->post($mail);
+  echo "<a href='contact.php'>";
 ?>
