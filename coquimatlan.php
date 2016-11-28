@@ -422,11 +422,10 @@
 																		//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																	}
 																}
-															?><sup>o</sup>C
+															?><sup>o</sup>C <sub><img src="images/icons/temp.png" alt="" width=25 style="padding-top: 0px;margin-left: 0px;width: 25px;padding-bottom: 0px;border-top-style: solid;"></sub>
 
 														</div>
-															<img src="images/icons/temp.png" alt="" width=25 style="padding-top: 0px;margin-top: 0px;margin-left: 0px;width: 25px;padding-bottom: -15;padding-bottom: -30;">
-
+															
 
 													</div>
 													<div class="degree">
@@ -442,7 +441,7 @@
 																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
 																}
 															}
-														?><img src="images/icons/hum.png" alt="" width=25 style="padding-top: 0px;margin-top: 0px;margin-left: 0px;width: 25px;padding-bottom: -15;padding-bottom: -30;">
+														?><img src="images/icons/hum.png" alt="" width=25 style="width: 25px;margin-left: 15px;">
 													</div>
 													<div class="degree">
 														<?php
@@ -458,7 +457,7 @@
 															}
 														}
 														?>
-														<img src="images/icons/lum.png" alt="" width=25 style="padding-top: 0px;margin-top: 0px;margin-left: 0px;width: 25px;padding-bottom: -15;padding-bottom: -30;">
+														<img src="images/icons/lum.png" alt="" width=25 style="padding-top: 0px;margin-top: 0px;margin-left: 10px;width: 25px;padding-bottom: -15;padding-bottom: -30;"">
 													</div>
 
 												</div>
@@ -466,7 +465,7 @@
 										</div>
 									</div>
 								</div></div>
-								
+
 										<div class="antecedentes">
 											<p><h1>Medidas de Prevención</h1></p>
 											<p>Es importante tomar algunas de las siguientes precauciones en caso de un desastre natural, dar clic en los enlaces para mas información.</p>
