@@ -466,6 +466,74 @@
 										</div>
 									</div>
 								</div></div>
+								<div class="entry-content">
+										<div class="tabla" id="mobile-only"><div class="forecast-table">
+										<div class="container" >
+										<div class="forecast2-container" style="margin-top: 30px; padding: 20px 30px;">
+											
+												<div class="forecast-header">
+													<div class="date"><span> Hoy es: </span><?php echo date("Y-m-d ", $time);?></div>
+												</div> <!-- .forecast-header -->
+												<div class="forecast-content">
+													<div class="location">Coquimatlan</div><br>
+													<div class="degree">
+														<div >
+															<?php
+																$ultTemp="SELECT * FROM datos WHERE idSensor = '1' AND ubicacion = 'coquimatlan' AND fecha = '".date("Y-m-d ", $time)."' ORDER BY idDato desc limit 1";
+																echo "<br>";
+																$result1 = mysqli_query($con, $ultTemp);
+																if (mysqli_num_rows($result1) > 0)
+																{
+																	while($row = mysqli_fetch_assoc($result1)) 
+																	{
+																		echo $row['dato'];
+																		//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																	}
+																}
+															?><sup>o</sup>C
+															
+															<img src="images/icons/temp.png" alt="" width=25 style="padding-top: 0px;margin-top: 0px;margin-left: 0px;width: 25px;padding-bottom: -15;padding-bottom: -30;">
+														</div>
+															
+															
+													</div>
+													<div class="degree" style="margin-top:20px;">
+														<?php
+															$ultHum="SELECT * FROM datos WHERE idSensor = '2' AND ubicacion = 'coquimatlan' AND fecha = '".date('Y-m-d ', $time)."' ORDER BY idDato desc limit 1";
+															//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+															$result2 = mysqli_query($con, $ultHum);
+															if (mysqli_num_rows($result2) > 0)
+															{
+																while($row = mysqli_fetch_assoc($result2)) 
+																{
+																	echo $row['dato']."%";
+																	//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+																}
+															}	
+														?>
+														<img src="images/icons/hum.png" alt="" width=25 style="padding-top: 0px;margin-top: 0px;margin-left: 0px;width: 25px;padding-bottom: -15;padding-bottom: -30;">
+													</div>
+													<div class="degree" style="margin-top:20px;">
+														<?php
+														$ultLum="SELECT * FROM datos WHERE idSensor = '3' AND ubicacion = 'coquimatlan' AND fecha = '".date('Y-m-d ', $time)."' ORDER BY idDato desc limit 1";
+														//$ultimo = "SELECT MAX(idDato) FROM datos WHERE idSensor = '1'";
+														$result3 = mysqli_query($con, $ultLum);
+														if (mysqli_num_rows($result3) > 0)
+														{
+															while($row = mysqli_fetch_assoc($result3)) 
+															{
+																echo $row['dato']."%";
+																//$ActualColima = "id= ".$row['idSensor']."Hora: ".$row['hora']."Dato: ".$row['dato'];
+															}
+														}
+														?>
+														<img src="images/icons/lum.png" alt="" width=25 style="padding-top: 0px;margin-top: 0px;margin-left: 0px;width: 25px;padding-bottom: -15;padding-bottom: -30;">
+													</div>
+													
+												</div>
+											</div>
+										</div>
+									</div>
 										<div class="antecedentes">
 											<p><h1>Medidas de Prevención</h1></p>
 											<p>Es importante tomar algunas de las siguientes precauciones en caso de un desastre natural, dar clic en los enlaces para mas información.</p>
