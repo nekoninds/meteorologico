@@ -315,20 +315,20 @@ include("conexion.php");
 					<div class="container">
 						<div class="row">
 							<div class="col-md-4">
-								<div class="news">
+								<div class="news" style=" padding-left: 0px;">
 									<h3><a href="#">Visión </a></h3>
 									<p style="text-align: justify;">Ser la empresa de referencia en el ámbito de las redes digitales y el monitoreo a distancia a nivel nacional.</p>
 								</div>
 							</div>
 							<div class="col-md-4">
-								<div class="news">
+								<div class="news" style=" padding-left: 0px;">
 									<h3><a href="#">Misión</a></h3>
 									<p style="text-align: justify;"> Acelerar la transición del mundo a un mundo conectado.</p>
 
 								</div>
 							</div>
 							<div class="col-md-4">
-								<div class="news">
+								<div class="news" style=" padding-left: 0px;">
 									<h3><a href="#">Objetivo </a></h3>
 									<p style="text-align: justify;"> Nuestro más grande objetivo como empresa, es que nuestros clientes adquieran sistemas de monitoreo de calidad y de larga duración.</p>
 
