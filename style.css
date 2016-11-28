@@ -3,34 +3,6 @@
 
 */
 
-@media only screen and (min-width:992px) {
-  #mobile-only {
-   display:none !important;
-  }
-  #desktop-only {
-    display:block !important;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  #mobile-only {
-    display:block !important;
-  }
-
-  #desktop-only {
-    display:none !important;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #adaptativo {
-    visibility: hidden;
-    clear: both;
-    float: left;
-    margin: 10px auto 5px 20px;
-    width: 28%;
-    display: none;
-  }
 
 .ContenedorMapa{
  background-position: center;
