@@ -222,7 +222,7 @@ include("conexion.php");
 							mysqli_close($con);
 
 						?>
-				<div class="Mapa" id="desktop-only"  style="padding-left: 0px; margin: 0 auto; width: 50%;">
+				<div class="Mapa" id="desktop-only"  style="padding-left: 0px; margin: 0 auto; width: 32%;">
 						<img id="MapaColima" src="images/estadoColima.png" style="border: 0px;position: absolute;left: 0px;top: 0px;padding: 0px;opacity: 0;margin-right: 0px;margin-left: 0px;margin-top: 0px;margin-bottom: 0px; "" usemap="#EstadoColima"/>
 		    			<div id="selections" style="float:right;"></div>
 
