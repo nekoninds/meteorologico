@@ -54,12 +54,12 @@
 						<div class="col-md-6 col-md-offset-1">
 							<h2 class="section-title">Contact us</h2>
 							<p>Digital Systems</p>
-							<form action="mailer.php" method="post" class="contact-form">
+							<form action="contact_mailer.php" method="post" class="contact-form">
 								<div class="row">
 									<div class="col-md-6"><input type="text" placeholder="Your name..." name="name"></div>
 									<div class="col-md-6"><input type="email" placeholder="Email Addresss..." name="email"></div>
 								</div>
-								<textarea name="message" placeholder="Message..." name="msj"></textarea>
+								<textarea name="message" placeholder="Message..." name="message"></textarea>
 								<div class="text-right">
 									<input type="submit" name='submit' value='submit' placeholder="Send message">
 								</div>
