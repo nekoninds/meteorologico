@@ -13,3 +13,6 @@
   $sg->client->mail()->send()->post($mail);
   
 ?>
+<?php
+	header("Location:contact.php");
+ ?>
